@@ -1,0 +1,19 @@
+.top-btn-position{
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+}
+.top-btn-style{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid brown;
+    background-color: aliceblue;
+    color: black;
+    cursor: pointer;
+    z-index: 9999999;
+    opacity: 60%;
+}
+.top-btn-style:hover{
+    opacity: 100%;
+}

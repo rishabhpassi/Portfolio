@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #D4F290;
+    font-family: 'Montserrat';
+    text-align: center;
+
+}
+.headin p{
+    font-size:2rem;
+}
+.headin{
+    
+    
+    padding: 1rem;
+    border-bottom: 1px solid #D4F290;
+    width: 50vw;
+
+}
+.icon{
+    height: 2rem;
+    width: 2rem;
+    margin: 1rem;
+    
+}
+
+@media (min-width: 320px) and (max-width: 1000px){
+.headin p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+}
