@@ -7,7 +7,7 @@ import "animate.css/animate.min.css";
 
 
 
-const Home = ({featuredImage}) => {
+const Home = ({ featuredImage }) => {
     const restPath = 'https://rishabhp.in/PORTFOLIO/wp-json/wp/v2/pages/5?_embed'
     const [restData, setData] = useState([])
     const [isLoaded, setLoadStatus] = useState(false)
@@ -15,7 +15,7 @@ const Home = ({featuredImage}) => {
     useEffect(() => {
         const fetchData = async () => {
             const response = await fetch(restPath)
-            if ( response.ok ) {
+            if (response.ok) {
                 const data = await response.json()
                 setData(data)
                 setLoadStatus(true)
@@ -25,42 +25,44 @@ const Home = ({featuredImage}) => {
         }
         fetchData()
     }, [restPath])
-    
+
+
     return (
         <>
-        { isLoaded ?
-        <>
-        <div className='grid-div' id='Home'>
-            <div className='background-blue'></div>
-                    <div className='background-green'></div>
-                <article className='front-page'>
+            {isLoaded ?
+                <>
 
-                    
-                    <div className="left-home-content">
-                    <AnimationOnScroll animateIn="animate__fadeInLeftBig">
-                    <h1 className="title-site" dangerouslySetInnerHTML={{__html:restData.title.rendered}}>
-                            </h1>
-  
-                    </AnimationOnScroll>
-                           
-                            <div className="entry-content" dangerouslySetInnerHTML={{__html:restData.content.rendered}}>
+                    <div className='grid-div' id='Home'>
+                        <div className='background-blue'></div>
+                        <div className='background-green'></div>
+                        <article className='front-page'>
+
+
+                            <div className="left-home-content">
+                                <AnimationOnScroll animateIn="animate__fadeInLeftBig">
+                                    <h1 className="title-site" dangerouslySetInnerHTML={{ __html: restData.title.rendered }}>
+                                    </h1>
+
+                                </AnimationOnScroll>
+
+                                <div className="entry-content" dangerouslySetInnerHTML={{ __html: restData.content.rendered }}>
+                                </div>
                             </div>
-                    </div>    
-                    <div className='avatar'>
-                        <img src= {restData._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url} alt="image" />
+                            <div className='avatar'>
+                                <img src={restData._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url} alt="image" />
+                            </div>
+
+
+                        </article>
                     </div>
-                    
-                    
-                </article>
-            </div> 
-            
-         </>
-        : 
-            <Loading />
-        }
-        </>   
+
+                </>
+                :
+                <Loading />
+            }
+        </>
     )
-  
+
 }
 
 export default Home

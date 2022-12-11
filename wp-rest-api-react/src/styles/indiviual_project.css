@@ -1,17 +1,19 @@
-#indiviual{
+#indiviual {
     text-align: center;
     background-color: #F5F4FB;
     padding: 2rem;
 }
-.project_info{
-    
+
+.project_info {
+
     padding-top: 1rem;
 }
-.proj-title{
-    color:#38175C ;
+
+.proj-title {
+    color: #38175C;
 }
 
-.project-box{
+.project-box {
     background-color: #4532CC;
     border-radius: 30px;
     padding: 2rem;
@@ -20,43 +22,50 @@
     margin: 0 auto;
     margin-bottom: 2rem;
 }
-.proj-button{
+
+.proj-button {
     color: #404040;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 1rem;
-    
+
 
 }
-.proj-button:hover{
-   
+
+.proj-button:hover {
+
     color: rgb(176, 133, 133);
 }
-.proj-button a{
+
+.proj-button a {
     color: #4532CC;
 
 }
-#indiviual .project-box h4{
+
+#indiviual .project-box h4 {
     color: #D0EE8C;
 }
-.overview{
+
+.overview {
     border-radius: 30px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     padding: 1rem;
     max-width: 70vw;
     margin: 0 auto;
     color: #38175C;
 }
-.features-img{
+
+.features-img {
     max-width: 50vw;
     max-height: 50vh;
     margin: 1rem;
 }
-.features{
+
+.features {
     border-radius: 30px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     color: #38175C;
     background-color: #4532CC;
     border-radius: 30px;
@@ -64,8 +73,16 @@
     color: white;
     margin-top: 1rem;
 }
+
 @media (min-width:320px) and (max-width:665px) {
-    .project-box{
-		max-width: none;
-	}
+    .project-box {
+        max-width: none;
+    }
+
+    .features-img {
+        max-width: 100%;
+        max-height: 50vh;
+        margin: auto;
+
+    }
 }

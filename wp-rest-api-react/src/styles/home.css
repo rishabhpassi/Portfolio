@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-.left-home-content{
-     
+.left-home-content {
+
     display: flex;
     flex-direction: column;
     position: relative;
@@ -9,40 +9,41 @@
     gap: 3rem;
 
 }
-@keyframes glow {
-  
-  }
-  
-.title-site{
+
+@keyframes glow {}
+
+.title-site {
     font-size: 4rem;
     font-family: 'Montserrat';
     color: #D4F290;
     text-align: center;
-   
- 
+
+
 }
 
 
 
-.entry-content{
-font-size: 2rem;
-font-family: 'Montserrat';
-color: white;
-text-align: center;
--webkit-animation: glow 1s ease-in-out infinite alternate;
--moz-animation: glow 1s ease-in-out infinite alternate;
-animation: glow 1s ease-in-out infinite alternate;
+.entry-content {
+    font-size: 2rem;
+    font-family: 'Montserrat';
+    color: white;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
 }
-.avatar{
+
+.avatar {
     width: 30vw;
-    
+
     filter: drop-shadow(12px 12px 7px rgba(127, 7, 7, 0.5));
     border: 0.11rem solid #fff;
 
 
-    
+
 }
-.background-blue{
+
+.background-blue {
     position: absolute;
     height: 121.9vh;
     width: 118vh;
@@ -51,7 +52,8 @@ animation: glow 1s ease-in-out infinite alternate;
     background-color: #4532CC;
     z-index: -1;
 }
-.background-green{
+
+.background-green {
     position: absolute;
     height: 121.9vh;
     width: 140vh;
@@ -62,11 +64,13 @@ animation: glow 1s ease-in-out infinite alternate;
 
 
 }
-.front-page{
+
+.front-page {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.grid-div{
+
+.grid-div {
     position: relative;
 }

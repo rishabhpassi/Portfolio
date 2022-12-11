@@ -1,38 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
-.project-title{
-   text-align: center;
-   color: #D1EF8D;
+.project-title {
+    text-align: center;
+    color: #D1EF8D;
 }
-.projects-section{
+
+.projects-section {
     background-color: #4532CC;
     padding-top: 2rem;
     font-family: 'Montserrat';
-	
-	margin: 0 auto;
+
+    margin: 0 auto;
 
 }
-.project-info{
+
+.project-info {
     color: white;
     max-width: 30rem;
 }
-.projects{
+
+.projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.projects img{
+
+.projects img {
     max-width: 35rem;
 }
-.project-buttons{
+
+.project-buttons {
     color: #4532CC;
 }
-project-buttons.a:visited{
+
+project-buttons.a:visited {
     color: #4532CC;
 }
-button.project-buttons a:visited{
+
+button.project-buttons a:visited {
     color: #4532CC;
 
 }

@@ -1,38 +1,37 @@
-import React from "react"; 
-import{ useState,useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 import "../styles/scroll.css"
-import {FaAngleDoubleUp} from 'react-icons/fa';
+import { FaAngleDoubleUp } from 'react-icons/fa';
 
 const ScrollToSection = () => {
     const [showScrolltoTopButton, setshowScrolltoTopButton] = useState(false);
-    useEffect(()=>{
-        
-            window.addEventListener('scroll',()=>{
-                if(window.scrollY > 100){
-                    setshowScrolltoTopButton(true)
-                    
-                }else{
-                    setshowScrolltoTopButton(false)
-                }
-            })
-           
-    },[])
+    useEffect(() => {
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                setshowScrolltoTopButton(true)
+
+            } else {
+                setshowScrolltoTopButton(false)
+            }
+        })
+
+    }, [])
     const ScrollTop = () => {
         window.scrollTo({
-            top:0,
-            behaviour:"smooth",
+            top: 0,
+            behaviour: "smooth",
         });
     }
-    return(
+    return (
         <div >
             {
-        showScrolltoTopButton &&
-        <FaAngleDoubleUp onClick={ScrollTop} className='top-btn-position top-btn-style' />}
-        
+                showScrolltoTopButton &&
+                <FaAngleDoubleUp onClick={ScrollTop} className='top-btn-position top-btn-style' />}
+
         </div>
     )
-    
-  }
-  export default ScrollToSection;
 
-  
+}
+export default ScrollToSection;
+

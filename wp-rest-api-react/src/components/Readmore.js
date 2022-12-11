@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "..//styles/read.css";
-  
+
 const ReadMore = ({ children }) => {
   const text = children;
   const [isReadMore, setIsReadMore] = useState(true);
@@ -16,7 +16,7 @@ const ReadMore = ({ children }) => {
     </p>
   );
 };
-  
 
-  
+
+
 export default ReadMore;

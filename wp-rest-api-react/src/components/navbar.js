@@ -5,15 +5,6 @@ import { HashLink } from 'react-router-hash-link';
 
 
 
-
-
-
-
-
-  
-  
-
-
 const COLORS = {
   primaryDark: "#115b4c",
   primaryLight: "#B6EDC8",
@@ -128,7 +119,7 @@ function HamburgerMenu() {
 
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-  
+
   return (
     <div className="hamburger">
       <MenuLabel htmlFor="navi-toggle" onClick={handleClick}>
@@ -140,37 +131,37 @@ function HamburgerMenu() {
         <List>
           <li >
             <ItemLink onClick={handleClick} to="/">
-            <HashLink smooth to="/#Home">
-              Home
+              <HashLink smooth to="/#Home">
+                Home
               </HashLink>
             </ItemLink>
           </li>
           <li >
             <ItemLink onClick={handleClick} to="">
-            <HashLink smooth to="/#Projects">
-            Projects
+              <HashLink smooth to="/#Projects">
+                Projects
               </HashLink>
-              
+
             </ItemLink>
           </li>
           <li >
             <ItemLink onClick={handleClick} to="">
-            <HashLink smooth to="/#skills">
+              <HashLink smooth to="/#skills">
                 Skills
               </HashLink>
-              
+
             </ItemLink>
           </li>
           <li >
             <ItemLink onClick={handleClick} to="">
-            <HashLink smooth to="/#about">
-            About
+              <HashLink smooth to="/#about">
+                About
               </HashLink>
-              
-              
+
+
             </ItemLink>
           </li>
-          
+
         </List>
       </Navigation>
     </div>

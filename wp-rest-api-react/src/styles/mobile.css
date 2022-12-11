@@ -1,4 +1,4 @@
-.bottom-navbar{
+.bottom-navbar {
     position: fixed;
     bottom: 0;
     right: 0;
@@ -7,31 +7,43 @@
     background-color: #D4F290;
     z-index: 100000;
     width: 100vw;
-    height: 13vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 1rem;
     align-items: center;
-    
+
 
 }
-.icons{
-    min-height: 2.5rem;
-    min-width: 2.5rem;
+
+.icons {
+    min-height: 1.5rem;
+    min-width: 1.5rem;
     fill: #4532CC;
     cursor: pointer;
-}
-.icons:hover{
-    fill:white;
+
 
 }
-.hover-text{
-    display: none;
+
+.icons:hover {
+    fill: white;
+
+
 }
-.icons:hover + .hover-text{
-    display: block;
+
+.bottom-navbar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    font-size: 1rem;
+
+
+}
+
+
+.icons+.hover-text {
     color: #4532CC;
-    text-align: center;
-    position: absolute;
 }
